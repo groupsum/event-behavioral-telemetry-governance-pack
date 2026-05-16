@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0.0",
+  "ssot_package_name": "ssot-pack-event-behavioral-telemetry",
+  "origin": {
+    "id": "pack:event-behavioral-telemetry",
+    "package_name": "ssot-pack-event-behavioral-telemetry",
+    "import_name": "ssot_pack_event_behavioral_telemetry",
+    "kind": "governance-pack",
+    "title": "Event Tracking And Behavioral Telemetry",
+    "description": "Installable SSOT governance pack for event envelopes, behavioral telemetry vocabularies, interaction events, and normalized event schemas.",
+    "homepage": "https://github.com/groupsum/event-behavioral-telemetry-governance-pack",
+    "repository": "https://github.com/groupsum/event-behavioral-telemetry-governance-pack"
+  },
+  "compatibility": {
+    "python": ">=3.10,<3.15",
+    "ssot_registry_schema": ">=0.4.0",
+    "ssot_pack_contract": ">=0.2.17,<0.3.0"
+  },
+  "trust": {
+    "trusted_by_default": false,
+    "origin": "extension-pack",
+    "reservation_owner": "extension-pack:ssot-pack-event-behavioral-telemetry"
+  },
+  "documents": {
+    "adr": {
+      "manifest_path": "templates/adr/manifest.json"
+    },
+    "spec": {
+      "manifest_path": "templates/specs/manifest.json"
+    }
+  }
+}

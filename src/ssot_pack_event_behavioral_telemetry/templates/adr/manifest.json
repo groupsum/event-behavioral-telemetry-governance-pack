@@ -1,0 +1,38 @@
+[
+  {
+    "id": "adr:event-envelope-authority",
+    "number": 1001,
+    "slug": "event-envelope-authority",
+    "title": "Event Envelope Authority",
+    "filename": "ADR-1001-event-envelope-authority.yaml",
+    "target_path": ".ssot/adr/ADR-1001-event-envelope-authority.yaml",
+    "sha256": "7823512e66f5b63055700e7a984f310000930352354ed711c16fcb7064c09c35",
+    "origin": "extension-pack",
+    "reservation_owner": "extension-pack:ssot-pack-event-behavioral-telemetry",
+    "immutable": true,
+    "minimum_schema_version": "0.4.0",
+    "introduced_in": "0.1.0",
+    "status": "accepted",
+    "supersedes": [],
+    "superseded_by": [],
+    "status_notes": []
+  },
+  {
+    "id": "adr:behavioral-telemetry-taxonomy-boundary",
+    "number": 1002,
+    "slug": "behavioral-telemetry-taxonomy-boundary",
+    "title": "Behavioral Telemetry Taxonomy Boundary",
+    "filename": "ADR-1002-behavioral-telemetry-taxonomy-boundary.yaml",
+    "target_path": ".ssot/adr/ADR-1002-behavioral-telemetry-taxonomy-boundary.yaml",
+    "sha256": "c04d952cc75be326b2fbf67ccf43431327db295f73ce81b497710306feac8f57",
+    "origin": "extension-pack",
+    "reservation_owner": "extension-pack:ssot-pack-event-behavioral-telemetry",
+    "immutable": true,
+    "minimum_schema_version": "0.4.0",
+    "introduced_in": "0.1.0",
+    "status": "accepted",
+    "supersedes": [],
+    "superseded_by": [],
+    "status_notes": []
+  }
+]
