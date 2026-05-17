@@ -1,0 +1,30 @@
+{
+  "id": "adr:behavioral-event-taxonomy-policy",
+  "number": 1003,
+  "slug": "behavioral-event-taxonomy-policy",
+  "title": "Behavioral Event Taxonomy Policy",
+  "status": "accepted",
+  "supersedes": [],
+  "superseded_by": [],
+  "context": [
+    "Behavioral telemetry requires stable event categories, names, types, outcomes, severities, and attributes.",
+    "Different standards define taxonomy fields at different layers."
+  ],
+  "decision": [
+    "Choose explicit taxonomy authorities for behavioral event classification.",
+    "Use OpenTelemetry semantic conventions for observability-oriented event names and attributes.",
+    "Use normalized schema families such as ECS, OCSF, or Splunk CIM when downstream search, correlation, or investigation depends on those field conventions.",
+    "Keep taxonomy decisions separate from raw browser interaction event decisions."
+  ],
+  "authority_sources": [
+    "OpenTelemetry semantic conventions for events",
+    "Elastic Common Schema",
+    "Open Cybersecurity Schema Framework",
+    "Splunk Common Information Model"
+  ],
+  "consequences": [
+    "Event inventories must map local event names to the selected taxonomy.",
+    "Validation must check category, type, outcome, severity, and attribute naming where the selected authority defines them.",
+    "Unmapped local categories require documented exceptions."
+  ]
+}

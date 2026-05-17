@@ -1,0 +1,33 @@
+schema_version: 9
+kind: "adr"
+id: "adr:1004"
+number: 1004
+slug: "activity-and-learning-telemetry-inclusion-boundary"
+title: "Activity And Learning Telemetry Inclusion Boundary"
+status: "accepted"
+origin: "repo-local"
+decision_date: null
+tags: []
+summary: "Behavioral telemetry also appears as activity streams and learning activity statements, where the event model is semantic rather than browser-event-oriented."
+supersedes: []
+superseded_by: []
+status_notes: []
+references: []
+body: |-
+  ## Context
+  
+  Behavioral telemetry also appears as activity streams and learning activity statements, where the event model is semantic rather than browser-event-oriented.
+  
+  ## Decision
+  
+  This pack includes Activity Streams, Activity Vocabulary, xAPI, and IMS Caliper as activity telemetry authorities. Activity Streams and Activity Vocabulary govern actor/activity/object style social and behavioral activity records. xAPI and IMS Caliper govern learning and experience activity telemetry.
+  
+  The pack does not treat these sources as generic analytics APIs or as customer profile identity standards.
+  
+  ## Authority Sources
+  
+  - W3C Activity Streams 2.0 Core.
+  - W3C Activity Vocabulary.
+  - Experience API / xAPI.
+  - IMS Caliper Analytics.
+  - IMS Caliper Analytics implementation guide.

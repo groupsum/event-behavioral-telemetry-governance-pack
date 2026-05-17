@@ -1,0 +1,30 @@
+{
+  "id": "adr:event-identity-and-correlation-policy",
+  "number": 1008,
+  "slug": "event-identity-and-correlation-policy",
+  "title": "Event Identity And Correlation Policy",
+  "status": "accepted",
+  "supersedes": [],
+  "superseded_by": [],
+  "context": [
+    "Behavioral telemetry often needs stable event identifiers, source identifiers, subject identifiers, correlation identifiers, and timestamps.",
+    "Different authorities define these fields differently."
+  ],
+  "decision": [
+    "Document event identity and correlation fields for every governed telemetry surface.",
+    "Use CloudEvents attributes such as id, source, type, subject, time, and extensions where CloudEvents is selected.",
+    "Use OpenTelemetry trace, span, resource, timestamp, and attribute conventions where OpenTelemetry is selected.",
+    "Use normalized schema identifiers and correlation fields where ECS, OCSF, Splunk CIM, LEEF, or CEF is selected."
+  ],
+  "authority_sources": [
+    "CloudEvents core specification",
+    "OpenTelemetry specification",
+    "Elastic Common Schema",
+    "Open Cybersecurity Schema Framework"
+  ],
+  "consequences": [
+    "Event fixtures must include identity and timestamp fields required by the selected authority.",
+    "Correlation claims must be validated with runtime or fixture evidence.",
+    "Subject identifiers must be reviewed for privacy and minimization risk."
+  ]
+}

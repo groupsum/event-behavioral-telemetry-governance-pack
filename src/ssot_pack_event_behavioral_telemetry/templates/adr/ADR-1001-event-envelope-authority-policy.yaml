@@ -1,0 +1,30 @@
+{
+  "id": "adr:event-envelope-authority-policy",
+  "number": 1001,
+  "slug": "event-envelope-authority-policy",
+  "title": "Event Envelope Authority Policy",
+  "status": "accepted",
+  "supersedes": [],
+  "superseded_by": [],
+  "context": [
+    "Downstream systems that exchange telemetry events need an explicit authority for event envelope fields, event identity, source identity, timestamps, and extension attributes.",
+    "CloudEvents and OpenTelemetry may both be present, but they govern different layers of event handling."
+  ],
+  "decision": [
+    "Select and document the canonical event-envelope authority for interoperable event records.",
+    "Use CloudEvents when the governed surface is event interchange, routing, or portable event metadata.",
+    "Use OpenTelemetry when the governed surface is observability telemetry, resources, attributes, logs, spans, or semantic conventions.",
+    "Do not treat an envelope authority decision as proof that event-specific payload data conforms to a domain schema."
+  ],
+  "authority_sources": [
+    "CloudEvents core specification",
+    "OpenTelemetry specification",
+    "OpenTelemetry logs data model",
+    "OpenTelemetry semantic conventions for events"
+  ],
+  "consequences": [
+    "Event records must identify which authority controls envelope metadata.",
+    "Validation must distinguish required envelope attributes from application payload fields.",
+    "Claims and evidence must cite the chosen envelope authority."
+  ]
+}

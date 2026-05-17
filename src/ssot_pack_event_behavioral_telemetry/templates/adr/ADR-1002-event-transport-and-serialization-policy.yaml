@@ -1,0 +1,28 @@
+{
+  "id": "adr:event-transport-and-serialization-policy",
+  "number": 1002,
+  "slug": "event-transport-and-serialization-policy",
+  "title": "Event Transport And Serialization Policy",
+  "status": "accepted",
+  "supersedes": [],
+  "superseded_by": [],
+  "context": [
+    "Event conformance depends on both the logical event model and the way events are serialized or transported.",
+    "HTTP binding and JSON serialization choices affect headers, content types, batching, and validation fixtures."
+  ],
+  "decision": [
+    "Document transport binding and serialization choices separately from event semantics.",
+    "Use CloudEvents HTTP binding requirements when events are exchanged over HTTP as CloudEvents.",
+    "Use CloudEvents JSON event format requirements when JSON serialization is the governed evidence surface.",
+    "Record any batching, structured mode, binary mode, and content-type choices as downstream decisions."
+  ],
+  "authority_sources": [
+    "CloudEvents HTTP protocol binding",
+    "CloudEvents JSON event format"
+  ],
+  "consequences": [
+    "Validators must inspect transport headers and serialized body shape where applicable.",
+    "Evidence must include representative transport or serialization fixtures.",
+    "Payload-schema acceptance does not by itself prove transport conformance."
+  ]
+}

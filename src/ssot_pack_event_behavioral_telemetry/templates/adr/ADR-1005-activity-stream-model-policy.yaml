@@ -1,0 +1,28 @@
+{
+  "id": "adr:activity-stream-model-policy",
+  "number": 1005,
+  "slug": "activity-stream-model-policy",
+  "title": "Activity Stream Model Policy",
+  "status": "accepted",
+  "supersedes": [],
+  "superseded_by": [],
+  "context": [
+    "Some behavioral telemetry is best represented as semantic activity records rather than browser events or vendor analytics events.",
+    "Activity Streams provides a JSON/JSON-LD model for actors, activities, objects, links, and relationships."
+  ],
+  "decision": [
+    "Use Activity Streams Core and Activity Vocabulary when downstream behavior is modeled as actor, activity, object, target, result, origin, or relationship data.",
+    "Document the activity types, actor types, object types, and properties used by the downstream system.",
+    "Preserve JSON-LD context handling where the selected surface requires linked-data semantics.",
+    "Keep Activity Streams modeling separate from xAPI and Caliper learning telemetry decisions."
+  ],
+  "authority_sources": [
+    "W3C Activity Streams 2.0 Core",
+    "W3C Activity Vocabulary"
+  ],
+  "consequences": [
+    "Activity records must cite selected activity vocabulary terms.",
+    "Validation must verify required actor, activity, object, and context fields where applicable.",
+    "Evidence must include representative activity document fixtures."
+  ]
+}

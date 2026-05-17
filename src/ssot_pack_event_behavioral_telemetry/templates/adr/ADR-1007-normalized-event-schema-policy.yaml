@@ -1,0 +1,31 @@
+{
+  "id": "adr:normalized-event-schema-policy",
+  "number": 1007,
+  "slug": "normalized-event-schema-policy",
+  "title": "Normalized Event Schema Policy",
+  "status": "accepted",
+  "supersedes": [],
+  "superseded_by": [],
+  "context": [
+    "Operational and security analytics systems often normalize event records into common schemas or event formats.",
+    "Schema normalization is a separate decision from event collection and event envelope selection."
+  ],
+  "decision": [
+    "Select the normalized event schema or format required by downstream consumers.",
+    "Use ECS, OCSF, or Splunk CIM when downstream systems need normalized field semantics for search, analysis, or correlation.",
+    "Use LEEF or CEF when downstream systems require those event interchange formats.",
+    "Document source-to-normalized-field mappings and unsupported field gaps."
+  ],
+  "authority_sources": [
+    "Elastic Common Schema",
+    "Open Cybersecurity Schema Framework",
+    "Splunk Common Information Model",
+    "IBM QRadar LEEF",
+    "ArcSight Common Event Format"
+  ],
+  "consequences": [
+    "Normalized event records must include mapping evidence.",
+    "Validators must distinguish schema-field conformance from transport or storage success.",
+    "Unsupported schema fields must be explicit rather than silently omitted."
+  ]
+}

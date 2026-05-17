@@ -1,0 +1,29 @@
+{
+  "id": "adr:learning-activity-telemetry-policy",
+  "number": 1006,
+  "slug": "learning-activity-telemetry-policy",
+  "title": "Learning Activity Telemetry Policy",
+  "status": "accepted",
+  "supersedes": [],
+  "superseded_by": [],
+  "context": [
+    "Learning and experience telemetry uses specialized activity models and exchange expectations.",
+    "xAPI and IMS Caliper both govern learning activity telemetry, but they use different models and operational expectations."
+  ],
+  "decision": [
+    "Choose xAPI when downstream learning telemetry is governed as actor-verb-object statements exchanged with a Learning Record Store.",
+    "Choose IMS Caliper when downstream learning analytics is governed through Caliper events, metric profiles, sensors, and envelope transmission.",
+    "Document the selected learning telemetry authority before implementing event fixtures or validators.",
+    "Do not mix xAPI and Caliper fields without an explicit mapping decision."
+  ],
+  "authority_sources": [
+    "Experience API / xAPI",
+    "IMS Caliper Analytics",
+    "IMS Caliper Analytics implementation guide"
+  ],
+  "consequences": [
+    "Learning telemetry claims must identify the selected model.",
+    "Validation must check statement or event shape against that model.",
+    "Evidence must include exchange or serialization examples appropriate to the selected authority."
+  ]
+}

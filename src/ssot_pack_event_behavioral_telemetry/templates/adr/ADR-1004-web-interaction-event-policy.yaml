@@ -1,0 +1,30 @@
+{
+  "id": "adr:web-interaction-event-policy",
+  "number": 1004,
+  "slug": "web-interaction-event-policy",
+  "title": "Web Interaction Event Policy",
+  "status": "accepted",
+  "supersedes": [],
+  "superseded_by": [],
+  "context": [
+    "Web behavioral telemetry often starts with raw browser events before transformation into analytics or observability records.",
+    "Raw browser event semantics are governed by web platform standards, not vendor analytics schemas."
+  ],
+  "decision": [
+    "Treat DOM Events, UI Events, Pointer Events, and Input Events as raw web interaction authorities.",
+    "Document which browser event types are collected, transformed, suppressed, or redacted.",
+    "Preserve platform semantics such as event target, dispatch, propagation, pointer lifecycle, and input type.",
+    "Do not infer analytics event conformance from browser event capture alone."
+  ],
+  "authority_sources": [
+    "WHATWG DOM Events",
+    "W3C UI Events",
+    "W3C Pointer Events",
+    "W3C Input Events"
+  ],
+  "consequences": [
+    "Web interaction telemetry must document raw event provenance.",
+    "Evidence must show browser event fixtures or runtime observations.",
+    "Privacy-sensitive input telemetry must have redaction or suppression evidence."
+  ]
+}

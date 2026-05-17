@@ -1,0 +1,35 @@
+schema_version: 9
+kind: "adr"
+id: "adr:1002"
+number: 1002
+slug: "event-envelope-authority-stratification"
+title: "Event Envelope Authority Stratification"
+status: "accepted"
+origin: "repo-local"
+decision_date: null
+tags: []
+summary: "Event telemetry sources overlap across envelope formats, transport bindings, serialization formats, telemetry data models, and semantic conventions."
+supersedes: []
+superseded_by: []
+status_notes: []
+references: []
+body: |-
+  ## Context
+  
+  Event telemetry sources overlap across envelope formats, transport bindings, serialization formats, telemetry data models, and semantic conventions.
+  
+  ## Decision
+  
+  This pack treats CloudEvents as the canonical neutral event-envelope authority for interoperable event records, including core attributes, HTTP binding behavior, and JSON serialization. It treats OpenTelemetry as the canonical observability telemetry authority for event records, log records, resources, attributes, and semantic conventions.
+  
+  CloudEvents and OpenTelemetry are both in scope, but they govern different layers. CloudEvents governs portable event envelopes and event interchange. OpenTelemetry governs observability telemetry data modeling and semantic conventions.
+  
+  ## Authority Sources
+  
+  - CloudEvents core specification.
+  - CloudEvents HTTP protocol binding.
+  - CloudEvents JSON event format.
+  - OpenTelemetry specification.
+  - OpenTelemetry logs data model.
+  - OpenTelemetry semantic conventions for events.
+  - OpenTelemetry browser semantic conventions.

@@ -1,0 +1,32 @@
+schema_version: 9
+kind: "adr"
+id: "adr:1003"
+number: 1003
+slug: "web-interaction-event-authority-boundary"
+title: "Web Interaction Event Authority Boundary"
+status: "accepted"
+origin: "repo-local"
+decision_date: null
+tags: []
+summary: "Browser and web application telemetry often starts from platform events before it becomes product analytics, conversion measurement, or observability telemetry."
+supersedes: []
+superseded_by: []
+status_notes: []
+references: []
+body: |-
+  ## Context
+  
+  Browser and web application telemetry often starts from platform events before it becomes product analytics, conversion measurement, or observability telemetry.
+  
+  ## Decision
+  
+  This pack includes browser interaction event authorities when they define raw platform event semantics used as behavioral telemetry inputs. The included web interaction authorities are WHATWG DOM Events, W3C UI Events, W3C Pointer Events, and W3C Input Events.
+  
+  The pack does not govern vendor analytics event naming, campaign attribution, page performance metrics, or downstream behavioral product analytics schemas through this boundary.
+  
+  ## Authority Sources
+  
+  - WHATWG DOM Standard event model.
+  - W3C UI Events.
+  - W3C Pointer Events.
+  - W3C Input Events.

@@ -1,0 +1,33 @@
+schema_version: 9
+kind: "adr"
+id: "adr:1005"
+number: 1005
+slug: "normalized-event-schema-inclusion-boundary"
+title: "Normalized Event Schema Inclusion Boundary"
+status: "accepted"
+origin: "repo-local"
+decision_date: null
+tags: []
+summary: "Several event schema families normalize operational, security, and analytics-adjacent event records for correlation and investigation. These schemas are relevant to behavioral telemetry when they define event field semantics and normalized classifications."
+supersedes: []
+superseded_by: []
+status_notes: []
+references: []
+body: |-
+  ## Context
+  
+  Several event schema families normalize operational, security, and analytics-adjacent event records for correlation and investigation. These schemas are relevant to behavioral telemetry when they define event field semantics and normalized classifications.
+  
+  ## Decision
+  
+  This pack includes normalized event schema targets when they define event fields, categories, classes, outcomes, severities, or interchange formats useful for downstream behavioral telemetry normalization. The included targets are Elastic Common Schema, Open Cybersecurity Schema Framework, Splunk Common Information Model, IBM QRadar LEEF, and ArcSight Common Event Format.
+  
+  The pack does not govern SIEM deployment, security operations process, detection content, alert triage, or vendor product configuration.
+  
+  ## Authority Sources
+  
+  - Elastic Common Schema event fields and reference.
+  - Open Cybersecurity Schema Framework.
+  - Splunk Common Information Model.
+  - IBM QRadar LEEF overview and event components.
+  - ArcSight Common Event Format.

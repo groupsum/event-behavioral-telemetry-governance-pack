@@ -34,8 +34,14 @@ Event Tracking And Behavioral Telemetry
 
 ## Included ADRs
 
-- `adr:event-envelope-authority` - Event Envelope Authority
-- `adr:behavioral-telemetry-taxonomy-boundary` - Behavioral Telemetry Taxonomy Boundary
+- `adr:event-envelope-authority-policy` - Event Envelope Authority Policy
+- `adr:event-transport-and-serialization-policy` - Event Transport And Serialization Policy
+- `adr:behavioral-event-taxonomy-policy` - Behavioral Event Taxonomy Policy
+- `adr:web-interaction-event-policy` - Web Interaction Event Policy
+- `adr:activity-stream-model-policy` - Activity Stream Model Policy
+- `adr:learning-activity-telemetry-policy` - Learning Activity Telemetry Policy
+- `adr:normalized-event-schema-policy` - Normalized Event Schema Policy
+- `adr:event-identity-and-correlation-policy` - Event Identity And Correlation Policy
 
 ## Included SPECs
 

@@ -1,0 +1,40 @@
+schema_version: 9
+kind: "adr"
+id: "adr:1001"
+number: 1001
+slug: "event-behavioral-telemetry-domain-boundary"
+title: "Event Behavioral Telemetry Domain Boundary"
+status: "accepted"
+origin: "repo-local"
+decision_date: null
+tags: []
+summary: "The event behavioral telemetry governance pack curates standards and specifications for event envelopes, behavioral interaction telemetry, activity vocabularies, learning activity telemetry, and normalized event schemas."
+supersedes: []
+superseded_by: []
+status_notes: []
+references: []
+body: |-
+  ## Context
+  
+  The event behavioral telemetry governance pack curates standards and specifications for event envelopes, behavioral interaction telemetry, activity vocabularies, learning activity telemetry, and normalized event schemas.
+  
+  ## Decision
+  
+  This pack governs event tracking and behavioral telemetry sources only. It includes neutral event envelope standards, browser interaction event standards, activity and learning telemetry models, and normalized event schema families when they define event semantics, event fields, event transport, or event serialization.
+  
+  This pack does not govern campaign attribution, URL query attribution, vendor analytics collection APIs, consent signaling, customer identity records, product catalog semantics, ad supply-chain transparency, or web performance measurement.
+  
+  ## Authority Sources
+  
+  - CloudEvents core specification, HTTP protocol binding, and JSON event format.
+  - OpenTelemetry specification, logs data model, and semantic conventions for events and browser telemetry.
+  - WHATWG DOM Events.
+  - W3C UI Events, Pointer Events, and Input Events.
+  - W3C Activity Streams 2.0 Core and Activity Vocabulary.
+  - Experience API / xAPI.
+  - IMS Caliper Analytics and implementation guide.
+  - Elastic Common Schema.
+  - Open Cybersecurity Schema Framework.
+  - Splunk Common Information Model.
+  - IBM QRadar LEEF.
+  - ArcSight Common Event Format.
