@@ -1,0 +1,33 @@
+schema_version: 9
+kind: "spec"
+id: "spc:2004"
+number: 2004
+slug: "activity-telemetry-target-requirements"
+title: "Activity Telemetry Target Requirements"
+status: "accepted"
+origin: "repo-local"
+decision_date: null
+tags: []
+summary: "Define pack-local requirements for activity-stream and learning telemetry targets."
+supersedes: []
+superseded_by: []
+status_notes: []
+references: []
+body: |-
+  ## Purpose
+  
+  Define pack-local requirements for activity-stream and learning telemetry targets.
+  
+  ## Requirements
+  
+  - Activity Streams Core coverage must govern the JSON/JSON-LD activity data model.
+  - Activity Vocabulary coverage must govern activity, actor, object, link, relationship, and property terms.
+  - xAPI coverage must govern learning activity statements and Learning Record Store exchange expectations.
+  - IMS Caliper coverage must govern learning analytics events, metric profiles, sensors, envelopes, and HTTP transmission.
+  - Activity Streams, xAPI, and Caliper targets must stay separate because they use different models and validation evidence.
+  
+  ## Evidence Expectations
+  
+  - Target inventory for Activity Streams, Activity Vocabulary, xAPI, Caliper Analytics, and Caliper implementation guidance.
+  - Template review showing separate downstream conformance targets for activity stream, xAPI, and Caliper requirements.
+spec_kind: "governance"

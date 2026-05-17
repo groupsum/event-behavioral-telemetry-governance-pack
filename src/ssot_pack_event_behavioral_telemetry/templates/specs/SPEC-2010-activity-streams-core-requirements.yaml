@@ -1,0 +1,27 @@
+{
+  "id": "spc:activity-streams-core-requirements",
+  "number": 2010,
+  "slug": "activity-streams-core-requirements",
+  "title": "Activity Streams Core Requirements",
+  "status": "active",
+  "supersedes": [],
+  "superseded_by": [],
+  "spec_kind": "governance",
+  "adr_ids": ["adr:activity-stream-model-policy"],
+  "primary_targets": ["W3C Activity Streams 2.0 Core"],
+  "scope": {
+    "governs": ["activity JSON model", "JSON-LD context", "actors", "objects", "links", "relationships"],
+    "excludes": ["xAPI statement exchange", "Caliper Sensor API", "browser DOM events"]
+  },
+  "requirements": [
+    "Document Activity Streams object shape and JSON-LD context handling.",
+    "Validate actor, activity, object, target, result, origin, and relationship fields where used.",
+    "Record activity stream serialization evidence for representative records.",
+    "Keep activity model validation separate from transport or storage behavior."
+  ],
+  "evidence_expectations": [
+    "Activity Streams JSON fixtures.",
+    "Validation output for actor, object, and activity fields.",
+    "Mapping table from local behavior records to Activity Streams model fields."
+  ]
+}

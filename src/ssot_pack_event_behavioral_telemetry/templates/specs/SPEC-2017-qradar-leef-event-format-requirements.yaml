@@ -1,0 +1,27 @@
+{
+  "id": "spc:qradar-leef-event-format-requirements",
+  "number": 2017,
+  "slug": "qradar-leef-event-format-requirements",
+  "title": "QRadar LEEF Event Format Requirements",
+  "status": "active",
+  "supersedes": [],
+  "superseded_by": [],
+  "spec_kind": "governance",
+  "adr_ids": ["adr:normalized-event-schema-policy"],
+  "primary_targets": ["IBM QRadar LEEF overview", "IBM QRadar LEEF event components"],
+  "scope": {
+    "governs": ["LEEF syslog prefix", "LEEF header", "event ID", "delimiter", "key-value extension fields"],
+    "excludes": ["QRadar deployment configuration", "offense rules", "SIEM triage workflow"]
+  },
+  "requirements": [
+    "Document LEEF version, vendor, product, version, event ID, delimiter, and extension fields.",
+    "Validate key-value extension formatting and delimiter escaping.",
+    "Map local event severity and identifiers to LEEF-compatible fields.",
+    "Capture examples for accepted and malformed LEEF records."
+  ],
+  "evidence_expectations": [
+    "LEEF event format fixtures.",
+    "Validation output for headers, delimiter handling, and extension fields.",
+    "Mapping table from local event fields to LEEF components."
+  ]
+}

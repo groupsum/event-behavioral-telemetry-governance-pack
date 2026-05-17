@@ -1,0 +1,27 @@
+{
+  "id": "spc:ocsf-event-schema-requirements",
+  "number": 2015,
+  "slug": "ocsf-event-schema-requirements",
+  "title": "OCSF Event Schema Requirements",
+  "status": "active",
+  "supersedes": [],
+  "superseded_by": [],
+  "spec_kind": "governance",
+  "adr_ids": ["adr:normalized-event-schema-policy", "adr:behavioral-event-taxonomy-policy"],
+  "primary_targets": ["Open Cybersecurity Schema Framework"],
+  "scope": {
+    "governs": ["OCSF event classes", "categories", "activities", "severity", "actors", "devices", "observables"],
+    "excludes": ["security operations workflow", "detection rule content", "SIEM product configuration"]
+  },
+  "requirements": [
+    "Map local events to selected OCSF class and category semantics.",
+    "Validate required class, category, severity, activity, actor, device, and observable fields where used.",
+    "Document local fields that cannot be represented without extension.",
+    "Preserve OCSF field names and type expectations in normalized records."
+  ],
+  "evidence_expectations": [
+    "OCSF-mapped event fixtures.",
+    "Validation report for selected OCSF classes and attributes.",
+    "Mapping table from local events to OCSF classes and fields."
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "spc:xapi-statement-requirements",
+  "number": 2012,
+  "slug": "xapi-statement-requirements",
+  "title": "xAPI Statement Requirements",
+  "status": "active",
+  "supersedes": [],
+  "superseded_by": [],
+  "spec_kind": "governance",
+  "adr_ids": ["adr:learning-activity-telemetry-policy"],
+  "primary_targets": ["Experience API / xAPI"],
+  "scope": {
+    "governs": ["xAPI statements", "actor-verb-object records", "result and context fields", "Learning Record Store exchange"],
+    "excludes": ["Caliper events", "Activity Streams vocabulary terms", "general web interaction telemetry"]
+  },
+  "requirements": [
+    "Document actor, verb, object, result, context, timestamp, and authority fields where used.",
+    "Validate statement shape and required fields before exchange.",
+    "Capture Learning Record Store request and response evidence when LRS exchange is in scope.",
+    "Record local extensions and vocabulary decisions explicitly."
+  ],
+  "evidence_expectations": [
+    "xAPI statement fixtures for representative learning activities.",
+    "Validation report for required statement fields.",
+    "Learning Record Store exchange or mock response evidence."
+  ]
+}

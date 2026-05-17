@@ -1,0 +1,33 @@
+schema_version: 9
+kind: "spec"
+id: "spc:2003"
+number: 2003
+slug: "web-interaction-event-target-requirements"
+title: "Web Interaction Event Target Requirements"
+status: "accepted"
+origin: "repo-local"
+decision_date: null
+tags: []
+summary: "Define pack-local requirements for browser and web platform interaction event targets."
+supersedes: []
+superseded_by: []
+status_notes: []
+references: []
+body: |-
+  ## Purpose
+  
+  Define pack-local requirements for browser and web platform interaction event targets.
+  
+  ## Requirements
+  
+  - DOM Events coverage must govern the core event model: Event, EventTarget, listeners, dispatch, propagation, and custom events.
+  - UI Events coverage must govern keyboard, mouse, focus, and other user-interface event semantics.
+  - Pointer Events coverage must govern pointer type, pointer lifecycle, contact geometry, pressure, movement, and hardware-independent pointer handling.
+  - Input Events coverage must govern beforeinput, input, input type, and editing/input behavior semantics.
+  - These targets must remain raw platform event authorities and must not be treated as vendor analytics payload schemas.
+  
+  ## Evidence Expectations
+  
+  - Target inventory for DOM, UI, Pointer, and Input Events.
+  - Template review showing separate downstream conformance targets for each web interaction authority.
+spec_kind: "governance"

@@ -1,0 +1,27 @@
+{
+  "id": "spc:dom-event-model-requirements",
+  "number": 2006,
+  "slug": "dom-event-model-requirements",
+  "title": "DOM Event Model Requirements",
+  "status": "active",
+  "supersedes": [],
+  "superseded_by": [],
+  "spec_kind": "governance",
+  "adr_ids": ["adr:web-interaction-event-policy"],
+  "primary_targets": ["WHATWG DOM Events"],
+  "scope": {
+    "governs": ["Event", "EventTarget", "listeners", "dispatch", "propagation", "custom events"],
+    "excludes": ["UI-specific keyboard and mouse event fields", "pointer-specific fields", "vendor analytics capture"]
+  },
+  "requirements": [
+    "Document DOM event types used as telemetry inputs.",
+    "Preserve target, current target, event phase, bubbling, cancellation, and propagation assumptions where relevant.",
+    "Document custom event names and payload boundaries.",
+    "Validate that raw DOM event capture is not conflated with analytics event acceptance."
+  ],
+  "evidence_expectations": [
+    "Browser fixture demonstrating captured DOM events.",
+    "Validation or test output for custom event boundaries.",
+    "Mapping from raw DOM events to downstream telemetry records."
+  ]
+}

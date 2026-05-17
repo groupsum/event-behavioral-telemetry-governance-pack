@@ -1,0 +1,27 @@
+{
+  "id": "spc:pointer-event-requirements",
+  "number": 2008,
+  "slug": "pointer-event-requirements",
+  "title": "Pointer Event Requirements",
+  "status": "active",
+  "supersedes": [],
+  "superseded_by": [],
+  "spec_kind": "governance",
+  "adr_ids": ["adr:web-interaction-event-policy"],
+  "primary_targets": ["W3C Pointer Events"],
+  "scope": {
+    "governs": ["pointer type", "pointer lifecycle", "contact geometry", "pressure", "movement", "capture behavior"],
+    "excludes": ["keyboard events", "text input events", "analytics vendor payload schemas"]
+  },
+  "requirements": [
+    "Document pointer event types used for behavioral telemetry.",
+    "Validate pointerId, pointerType, coordinates, pressure, contact geometry, and lifecycle fields where collected.",
+    "Record how mouse, touch, and pen inputs are distinguished or normalized.",
+    "Capture privacy and minimization behavior for high-resolution pointer telemetry."
+  ],
+  "evidence_expectations": [
+    "Pointer interaction fixtures for mouse, touch, or pen where supported.",
+    "Validation output for pointer field mapping.",
+    "Runtime sample showing pointer lifecycle handling."
+  ]
+}

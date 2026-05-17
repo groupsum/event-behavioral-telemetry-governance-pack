@@ -1,0 +1,33 @@
+schema_version: 9
+kind: "spec"
+id: "spc:2001"
+number: 2001
+slug: "event-behavioral-telemetry-target-curation-requirements"
+title: "Event Behavioral Telemetry Target Curation Requirements"
+status: "accepted"
+origin: "repo-local"
+decision_date: null
+tags: []
+summary: "Define the source-curation requirements for the event behavioral telemetry governance pack."
+supersedes: []
+superseded_by: []
+status_notes: []
+references: []
+body: |-
+  ## Purpose
+  
+  Define the source-curation requirements for the event behavioral telemetry governance pack.
+  
+  ## Requirements
+  
+  - A source may be included only when it governs event envelopes, event transport, event serialization, behavioral interaction events, activity telemetry, learning telemetry, or normalized event schemas.
+  - Each included source must be classified as one of: envelope authority, transport or serialization authority, web interaction event authority, activity telemetry authority, learning telemetry authority, normalized schema authority, or event format authority.
+  - Sources that primarily govern campaign attribution, vendor analytics collection APIs, consent signaling, customer identity, product catalog data, ad supply-chain transparency, or web performance measurement are out of scope for this pack.
+  - Every downstream template target must trace back to at least one included source classification.
+  
+  ## Evidence Expectations
+  
+  - Source inventory showing each included target and its classification.
+  - Exclusion notes for adjacent sources that are not governed by this pack.
+  - Template manifest review showing source-to-template coverage.
+spec_kind: "governance"

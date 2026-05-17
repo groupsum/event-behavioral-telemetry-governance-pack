@@ -45,10 +45,24 @@ Event Tracking And Behavioral Telemetry
 
 ## Included SPECs
 
-- `spc:cloudevents-envelope-contract` - CloudEvents Envelope Contract
-- `spc:opentelemetry-event-contract` - OpenTelemetry Event Contract
-- `spc:dom-ui-pointer-input-event-contract` - DOM UI Pointer Input Event Contract
-- `spc:activity-streams-xapi-caliper-contract` - Activity Streams xAPI Caliper Contract
+- `spc:cloudevents-core-envelope-requirements` - CloudEvents Core Envelope Requirements
+- `spc:cloudevents-http-binding-requirements` - CloudEvents HTTP Binding Requirements
+- `spc:cloudevents-json-format-requirements` - CloudEvents JSON Format Requirements
+- `spc:opentelemetry-event-data-model-requirements` - OpenTelemetry Event Data Model Requirements
+- `spc:opentelemetry-browser-event-requirements` - OpenTelemetry Browser Event Requirements
+- `spc:dom-event-model-requirements` - DOM Event Model Requirements
+- `spc:ui-event-requirements` - UI Event Requirements
+- `spc:pointer-event-requirements` - Pointer Event Requirements
+- `spc:input-event-requirements` - Input Event Requirements
+- `spc:activity-streams-core-requirements` - Activity Streams Core Requirements
+- `spc:activity-vocabulary-requirements` - Activity Vocabulary Requirements
+- `spc:xapi-statement-requirements` - xAPI Statement Requirements
+- `spc:ims-caliper-event-requirements` - IMS Caliper Event Requirements
+- `spc:elastic-common-schema-event-requirements` - Elastic Common Schema Event Requirements
+- `spc:ocsf-event-schema-requirements` - OCSF Event Schema Requirements
+- `spc:splunk-cim-event-requirements` - Splunk CIM Event Requirements
+- `spc:qradar-leef-event-format-requirements` - QRadar LEEF Event Format Requirements
+- `spc:arcsight-cef-event-format-requirements` - ArcSight CEF Event Format Requirements
 
 ## Install With uv
 

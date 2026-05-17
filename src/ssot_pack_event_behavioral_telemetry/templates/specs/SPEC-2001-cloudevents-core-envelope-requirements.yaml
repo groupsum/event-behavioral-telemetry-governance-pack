@@ -1,0 +1,27 @@
+{
+  "id": "spc:cloudevents-core-envelope-requirements",
+  "number": 2001,
+  "slug": "cloudevents-core-envelope-requirements",
+  "title": "CloudEvents Core Envelope Requirements",
+  "status": "active",
+  "supersedes": [],
+  "superseded_by": [],
+  "spec_kind": "governance",
+  "adr_ids": ["adr:event-envelope-authority-policy", "adr:event-identity-and-correlation-policy"],
+  "primary_targets": ["CloudEvents core specification"],
+  "scope": {
+    "governs": ["CloudEvents core attributes", "extension attributes", "event identity and source metadata"],
+    "excludes": ["HTTP binding behavior", "JSON serialization format", "application-specific event payload schemas"]
+  },
+  "requirements": [
+    "Document required CloudEvents attributes for every governed event record.",
+    "Validate id, source, specversion, type, and any selected optional attributes.",
+    "Document extension attributes and their ownership before use.",
+    "Separate CloudEvents metadata validation from payload data validation."
+  ],
+  "evidence_expectations": [
+    "Representative CloudEvents fixtures with required and optional attributes.",
+    "Validation output for accepted and rejected envelope records.",
+    "Traceability from local event records to CloudEvents attribute requirements."
+  ]
+}

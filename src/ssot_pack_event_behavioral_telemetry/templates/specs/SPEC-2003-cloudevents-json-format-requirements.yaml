@@ -1,0 +1,27 @@
+{
+  "id": "spc:cloudevents-json-format-requirements",
+  "number": 2003,
+  "slug": "cloudevents-json-format-requirements",
+  "title": "CloudEvents JSON Format Requirements",
+  "status": "active",
+  "supersedes": [],
+  "superseded_by": [],
+  "spec_kind": "governance",
+  "adr_ids": ["adr:event-transport-and-serialization-policy", "adr:event-envelope-authority-policy"],
+  "primary_targets": ["CloudEvents JSON event format"],
+  "scope": {
+    "governs": ["CloudEvents JSON serialization", "JSON attribute representation", "data and data_base64 handling"],
+    "excludes": ["HTTP header binding", "non-JSON event formats", "domain payload schema validation"]
+  },
+  "requirements": [
+    "Validate JSON serialization of CloudEvents attributes.",
+    "Document data encoding choices and data_base64 handling when binary payloads are present.",
+    "Preserve extension attributes without changing their declared semantics.",
+    "Keep JSON format validation separate from transport validation."
+  ],
+  "evidence_expectations": [
+    "JSON event fixtures for representative events.",
+    "Validation report for serialized attributes and encoded data.",
+    "Negative fixture for invalid JSON event shape."
+  ]
+}

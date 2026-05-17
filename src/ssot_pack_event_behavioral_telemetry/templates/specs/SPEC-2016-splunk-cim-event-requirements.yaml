@@ -1,0 +1,27 @@
+{
+  "id": "spc:splunk-cim-event-requirements",
+  "number": 2016,
+  "slug": "splunk-cim-event-requirements",
+  "title": "Splunk CIM Event Requirements",
+  "status": "active",
+  "supersedes": [],
+  "superseded_by": [],
+  "spec_kind": "governance",
+  "adr_ids": ["adr:normalized-event-schema-policy", "adr:behavioral-event-taxonomy-policy"],
+  "primary_targets": ["Splunk Common Information Model"],
+  "scope": {
+    "governs": ["Splunk CIM data models", "normalized fields", "tags", "search-time expectations"],
+    "excludes": ["Splunk Enterprise deployment", "search app configuration", "dashboard authoring"]
+  },
+  "requirements": [
+    "Document the CIM data model and tags selected for each downstream event family.",
+    "Map local event fields to CIM normalized fields.",
+    "Validate field presence and naming expectations required for downstream correlation.",
+    "Record unmapped or intentionally unsupported CIM fields."
+  ],
+  "evidence_expectations": [
+    "CIM-mapped event fixtures or search samples.",
+    "Validation report for normalized fields and tags.",
+    "Mapping table from local event fields to CIM expectations."
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "spc:activity-vocabulary-requirements",
+  "number": 2011,
+  "slug": "activity-vocabulary-requirements",
+  "title": "Activity Vocabulary Requirements",
+  "status": "active",
+  "supersedes": [],
+  "superseded_by": [],
+  "spec_kind": "governance",
+  "adr_ids": ["adr:activity-stream-model-policy"],
+  "primary_targets": ["W3C Activity Vocabulary"],
+  "scope": {
+    "governs": ["activity types", "actor types", "object types", "relationship properties"],
+    "excludes": ["generic JSON validation", "xAPI verbs", "Caliper metric profiles"]
+  },
+  "requirements": [
+    "Document selected Activity Vocabulary terms used by downstream records.",
+    "Validate activity, actor, object, and relationship terms against the selected vocabulary.",
+    "Record unsupported local activity terms as explicit extensions or gaps.",
+    "Preserve vocabulary term semantics in downstream mappings."
+  ],
+  "evidence_expectations": [
+    "Vocabulary mapping table for local activity records.",
+    "Validation output for selected activity and object types.",
+    "Fixture showing vocabulary terms in serialized activity records."
+  ]
+}

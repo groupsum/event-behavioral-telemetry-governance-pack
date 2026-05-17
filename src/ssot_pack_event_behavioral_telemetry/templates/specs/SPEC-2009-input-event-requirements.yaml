@@ -1,0 +1,27 @@
+{
+  "id": "spc:input-event-requirements",
+  "number": 2009,
+  "slug": "input-event-requirements",
+  "title": "Input Event Requirements",
+  "status": "active",
+  "supersedes": [],
+  "superseded_by": [],
+  "spec_kind": "governance",
+  "adr_ids": ["adr:web-interaction-event-policy"],
+  "primary_targets": ["W3C Input Events"],
+  "scope": {
+    "governs": ["beforeinput events", "input events", "input types", "editing and text-input behavior"],
+    "excludes": ["stored text content", "form submission APIs", "vendor analytics event schemas"]
+  },
+  "requirements": [
+    "Document beforeinput and input event handling when used for telemetry.",
+    "Validate inputType and target context where collected.",
+    "Suppress or redact raw text content unless explicitly governed by a downstream privacy decision.",
+    "Separate editing behavior telemetry from persisted content collection."
+  ],
+  "evidence_expectations": [
+    "Input event fixtures that avoid sensitive raw content.",
+    "Validation output for input type and target context fields.",
+    "Privacy evidence for redaction, suppression, or minimization behavior."
+  ]
+}

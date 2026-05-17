@@ -1,0 +1,32 @@
+schema_version: 9
+kind: "spec"
+id: "spc:2002"
+number: 2002
+slug: "event-envelope-target-requirements"
+title: "Event Envelope Target Requirements"
+status: "accepted"
+origin: "repo-local"
+decision_date: null
+tags: []
+summary: "Define pack-local requirements for event envelope and telemetry data-model targets."
+supersedes: []
+superseded_by: []
+status_notes: []
+references: []
+body: |-
+  ## Purpose
+  
+  Define pack-local requirements for event envelope and telemetry data-model targets.
+  
+  ## Requirements
+  
+  - CloudEvents targets must distinguish core attributes, HTTP binding behavior, and JSON event format behavior.
+  - OpenTelemetry targets must distinguish the general specification, logs data model, semantic conventions for events, browser semantic conventions, and general semantic conventions.
+  - Envelope metadata, transport binding, serialization format, semantic convention, and payload schema requirements must not be collapsed into one target.
+  - Downstream templates must identify whether they validate event envelope fields, HTTP transport behavior, JSON serialization, telemetry record fields, or semantic attributes.
+  
+  ## Evidence Expectations
+  
+  - Target list proving separate coverage for CloudEvents core, CloudEvents HTTP binding, CloudEvents JSON format, OpenTelemetry event/log model, and OpenTelemetry browser semantics.
+  - Template review showing that envelope and semantic requirements are separate.
+spec_kind: "governance"

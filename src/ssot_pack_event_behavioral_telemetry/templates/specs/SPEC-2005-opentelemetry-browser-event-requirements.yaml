@@ -1,0 +1,27 @@
+{
+  "id": "spc:opentelemetry-browser-event-requirements",
+  "number": 2005,
+  "slug": "opentelemetry-browser-event-requirements",
+  "title": "OpenTelemetry Browser Event Requirements",
+  "status": "active",
+  "supersedes": [],
+  "superseded_by": [],
+  "spec_kind": "governance",
+  "adr_ids": ["adr:behavioral-event-taxonomy-policy", "adr:web-interaction-event-policy"],
+  "primary_targets": ["OpenTelemetry browser semantic conventions", "OpenTelemetry general semantic conventions"],
+  "scope": {
+    "governs": ["browser telemetry semantic attributes", "page and session context", "client-side event conventions"],
+    "excludes": ["raw DOM dispatch semantics", "vendor web analytics schemas", "browser performance timing metrics"]
+  },
+  "requirements": [
+    "Document browser, page, session, and user interaction attributes selected for telemetry.",
+    "Validate attribute names and value types against selected OpenTelemetry conventions.",
+    "Record where raw browser events are transformed into OpenTelemetry telemetry records.",
+    "Preserve privacy and minimization decisions for user interaction attributes."
+  ],
+  "evidence_expectations": [
+    "Browser telemetry fixtures with selected OpenTelemetry attributes.",
+    "Validation report for browser semantic attributes.",
+    "Runtime sample showing transformation from browser interaction to telemetry record."
+  ]
+}

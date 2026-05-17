@@ -1,0 +1,27 @@
+{
+  "id": "spc:opentelemetry-event-data-model-requirements",
+  "number": 2004,
+  "slug": "opentelemetry-event-data-model-requirements",
+  "title": "OpenTelemetry Event Data Model Requirements",
+  "status": "active",
+  "supersedes": [],
+  "superseded_by": [],
+  "spec_kind": "governance",
+  "adr_ids": ["adr:event-envelope-authority-policy", "adr:behavioral-event-taxonomy-policy", "adr:event-identity-and-correlation-policy"],
+  "primary_targets": ["OpenTelemetry specification", "OpenTelemetry logs data model", "OpenTelemetry semantic conventions for events"],
+  "scope": {
+    "governs": ["OpenTelemetry event and log record fields", "resources", "attributes", "severity", "timestamps"],
+    "excludes": ["CloudEvents transport binding", "vendor analytics event schemas", "backend collector deployment"]
+  },
+  "requirements": [
+    "Document body, attributes, timestamp, observed timestamp, severity, trace context, and resource fields used by telemetry events.",
+    "Map local event names and attributes to selected OpenTelemetry semantic conventions where applicable.",
+    "Validate required record fields and attribute typing.",
+    "Record gaps where no OpenTelemetry semantic convention exists."
+  ],
+  "evidence_expectations": [
+    "OpenTelemetry event or log record fixtures.",
+    "Validation report for required fields, resource attributes, and event attributes.",
+    "Mapping table from local events to selected semantic conventions."
+  ]
+}

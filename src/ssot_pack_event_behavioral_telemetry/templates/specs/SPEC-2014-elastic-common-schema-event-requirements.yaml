@@ -1,0 +1,27 @@
+{
+  "id": "spc:elastic-common-schema-event-requirements",
+  "number": 2014,
+  "slug": "elastic-common-schema-event-requirements",
+  "title": "Elastic Common Schema Event Requirements",
+  "status": "active",
+  "supersedes": [],
+  "superseded_by": [],
+  "spec_kind": "governance",
+  "adr_ids": ["adr:normalized-event-schema-policy", "adr:behavioral-event-taxonomy-policy"],
+  "primary_targets": ["Elastic Common Schema event fields", "Elastic Common Schema reference"],
+  "scope": {
+    "governs": ["ECS event fields", "event kind", "event category", "event type", "event action", "event outcome", "timestamps", "IDs"],
+    "excludes": ["Elastic deployment configuration", "index lifecycle policy", "dashboard visualization"]
+  },
+  "requirements": [
+    "Map local event records to ECS event fields and related common fields.",
+    "Validate event.kind, event.category, event.type, event.action, event.outcome, severity, timestamps, and identifiers where used.",
+    "Record unmapped local fields and ECS field gaps explicitly.",
+    "Preserve ECS field naming and type expectations."
+  ],
+  "evidence_expectations": [
+    "ECS-mapped event fixtures.",
+    "Validation report for ECS field names and value types.",
+    "Mapping table from local event fields to ECS fields."
+  ]
+}

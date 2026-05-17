@@ -1,0 +1,27 @@
+{
+  "id": "spc:ims-caliper-event-requirements",
+  "number": 2013,
+  "slug": "ims-caliper-event-requirements",
+  "title": "IMS Caliper Event Requirements",
+  "status": "active",
+  "supersedes": [],
+  "superseded_by": [],
+  "spec_kind": "governance",
+  "adr_ids": ["adr:learning-activity-telemetry-policy"],
+  "primary_targets": ["IMS Caliper Analytics", "IMS Caliper Analytics implementation guide"],
+  "scope": {
+    "governs": ["Caliper events", "metric profiles", "sensor behavior", "event envelopes", "HTTP transmission"],
+    "excludes": ["xAPI statements", "Activity Streams records", "browser raw event dispatch"]
+  },
+  "requirements": [
+    "Document Caliper event types, metric profiles, actor, action, object, generated entities, and event time fields.",
+    "Validate Caliper event shape before transmission.",
+    "Capture Sensor API or HTTP transmission behavior where applicable.",
+    "Record selected metric profiles and unsupported activity mappings."
+  ],
+  "evidence_expectations": [
+    "Caliper event fixtures for representative learning analytics records.",
+    "Validation output for event type and metric profile requirements.",
+    "Transmission fixture or mock response for Sensor API behavior."
+  ]
+}

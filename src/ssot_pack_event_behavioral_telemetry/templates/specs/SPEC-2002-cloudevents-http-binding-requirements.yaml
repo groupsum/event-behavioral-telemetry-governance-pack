@@ -1,0 +1,27 @@
+{
+  "id": "spc:cloudevents-http-binding-requirements",
+  "number": 2002,
+  "slug": "cloudevents-http-binding-requirements",
+  "title": "CloudEvents HTTP Binding Requirements",
+  "status": "active",
+  "supersedes": [],
+  "superseded_by": [],
+  "spec_kind": "governance",
+  "adr_ids": ["adr:event-transport-and-serialization-policy", "adr:event-envelope-authority-policy"],
+  "primary_targets": ["CloudEvents HTTP protocol binding"],
+  "scope": {
+    "governs": ["CloudEvents over HTTP", "binary content mode", "structured content mode", "batched HTTP exchange"],
+    "excludes": ["non-HTTP transports", "application payload semantics", "storage schema design"]
+  },
+  "requirements": [
+    "Document which CloudEvents HTTP content mode is supported.",
+    "Validate required HTTP headers or structured body fields for the selected content mode.",
+    "Capture request and response handling expectations for successful and failed event exchange.",
+    "Document batching behavior when batched events are supported."
+  ],
+  "evidence_expectations": [
+    "HTTP request and response fixtures for each supported content mode.",
+    "Validation output for header and body mapping.",
+    "Negative fixture for malformed or incomplete HTTP event exchange."
+  ]
+}

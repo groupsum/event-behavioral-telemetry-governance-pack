@@ -1,0 +1,27 @@
+{
+  "id": "spc:ui-event-requirements",
+  "number": 2007,
+  "slug": "ui-event-requirements",
+  "title": "UI Event Requirements",
+  "status": "active",
+  "supersedes": [],
+  "superseded_by": [],
+  "spec_kind": "governance",
+  "adr_ids": ["adr:web-interaction-event-policy"],
+  "primary_targets": ["W3C UI Events"],
+  "scope": {
+    "governs": ["keyboard events", "mouse events", "focus events", "composition and UI event context"],
+    "excludes": ["pointer-event geometry", "text input delta semantics", "vendor analytics event names"]
+  },
+  "requirements": [
+    "Document UI event types collected or transformed by the downstream system.",
+    "Preserve keyboard, mouse, focus, and composition event fields where used.",
+    "Record suppression and redaction behavior for sensitive interaction fields.",
+    "Validate event type and interaction context before deriving telemetry records."
+  ],
+  "evidence_expectations": [
+    "Browser interaction fixtures for representative UI events.",
+    "Validation output for selected event fields.",
+    "Privacy review evidence for sensitive keyboard or input-adjacent telemetry."
+  ]
+}
