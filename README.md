@@ -33,7 +33,7 @@ Use this package when a downstream repository needs to answer: which standards, 
 - Pack ID: `pack:event-behavioral-telemetry`
 - PyPI package: `event-behavioral-telemetry-governance-pack`
 - Import package: `ssot_pack_event_behavioral_telemetry`
-- GitHub repository: `groupsum/event-behavioral-telemetry-governance-pack`
+- GitHub repository: [groupsum/event-behavioral-telemetry-governance-pack](https://github.com/groupsum/event-behavioral-telemetry-governance-pack)
 - Reservation owner: `extension-pack:event-behavioral-telemetry-governance-pack`
 
 ## Domain Focus
