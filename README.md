@@ -28,7 +28,6 @@ Use this package when a downstream repository needs to answer: which standards, 
 ## Pack Metadata
 
 - Pack ID: `pack:event-behavioral-telemetry`
-- Priority: `P0.4`
 - PyPI package: `event-behavioral-telemetry-governance-pack`
 - Import package: `ssot_pack_event_behavioral_telemetry`
 - GitHub repository: `groupsum/event-behavioral-telemetry-governance-pack`
