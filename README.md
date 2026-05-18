@@ -1,8 +1,29 @@
 # event-behavioral-telemetry-governance-pack
 
+[![PyPI version](https://img.shields.io/pypi/v/event-behavioral-telemetry-governance-pack.svg)](https://pypi.org/project/event-behavioral-telemetry-governance-pack/)
+[![Python versions](https://img.shields.io/pypi/pyversions/event-behavioral-telemetry-governance-pack.svg)](https://pypi.org/project/event-behavioral-telemetry-governance-pack/)
+[![License](https://img.shields.io/pypi/l/event-behavioral-telemetry-governance-pack.svg)](https://pypi.org/project/event-behavioral-telemetry-governance-pack/)
+[![Publish](https://github.com/groupsum/event-behavioral-telemetry-governance-pack/actions/workflows/publish.yml/badge.svg)](https://github.com/groupsum/event-behavioral-telemetry-governance-pack/actions/workflows/publish.yml)
+[![GitHub package](https://img.shields.io/badge/GitHub-package-24292f)](https://github.com/groupsum/event-behavioral-telemetry-governance-pack)
+
 Installable SSOT governance pack for event envelopes, behavioral telemetry vocabularies, interaction events, and normalized event schemas.
 
 This repository is an installable SSOT Registry governance pack. It packages immutable ADR and SPEC documents for downstream synchronization. It intentionally does not cross-link to other governance packs.
+
+## Answer Engine Summary
+
+Short answer: `event-behavioral-telemetry-governance-pack` is an installable SSOT governance pack for Event Tracking And Behavioral Telemetry. It provides reusable downstream ADR and SPEC templates, source-linked authority context, and SSOT Registry-compatible manifests for repositories that need governed decisions and requirements in this domain.
+
+Use this package when a downstream repository needs to answer: which standards, specifications, or compliance targets govern event tracking and behavioral telemetry, which ADRs should capture the target policy choices, and which SPECs should define implementation-ready conformance requirements.
+
+## What This Governance Pack Provides
+
+- Installable Python package: [`event-behavioral-telemetry-governance-pack`](https://pypi.org/project/event-behavioral-telemetry-governance-pack/)
+- GitHub package repository: [`groupsum/event-behavioral-telemetry-governance-pack`](https://github.com/groupsum/event-behavioral-telemetry-governance-pack)
+- Import package: `ssot_pack_event_behavioral_telemetry`
+- Portable downstream ADR templates for policy decisions tied to authority sources.
+- Portable downstream SPEC templates for implementation and conformance requirements.
+- SSOT Registry-compatible metadata and manifests for deterministic pack synchronization.
 
 ## Pack Metadata
 
@@ -19,18 +40,18 @@ Event Tracking And Behavioral Telemetry
 
 ## Authority Sources
 
-- CloudEvents core, HTTP binding, and JSON event format
-- OpenTelemetry specification, logs data model, and semantic conventions
-- WHATWG DOM Events
-- W3C UI Events, Pointer Events, and Input Events
-- W3C Activity Streams and Activity Vocabulary
-- Experience API / xAPI
-- IMS Caliper Analytics
-- Elastic Common Schema
-- Open Cybersecurity Schema Framework
-- Splunk Common Information Model
-- IBM QRadar LEEF
-- ArcSight Common Event Format
+- [CloudEvents core](https://github.com/cloudevents/spec/blob/main/cloudevents/spec.md), [HTTP binding](https://github.com/cloudevents/spec/blob/main/cloudevents/bindings/http-protocol-binding.md), and [JSON event format](https://github.com/cloudevents/spec/blob/main/cloudevents/formats/json-format.md)
+- [OpenTelemetry specification](https://opentelemetry.io/docs/specs/), [logs data model](https://opentelemetry.io/docs/specs/otel/logs/data-model/), and [semantic conventions](https://opentelemetry.io/docs/specs/semconv/)
+- [WHATWG DOM Events](https://dom.spec.whatwg.org/#events)
+- [W3C UI Events](https://www.w3.org/TR/uievents/), [Pointer Events](https://www.w3.org/TR/pointerevents/), and [Input Events](https://w3c.github.io/input-events/)
+- [W3C Activity Streams](https://www.w3.org/TR/activitystreams-core/) and [Activity Vocabulary](https://www.w3.org/TR/activitystreams-vocabulary/)
+- [Experience API / xAPI](https://xapi.com/specification/)
+- [IMS Caliper Analytics](https://www.imsglobal.org/spec/caliper/v1p2/)
+- [Elastic Common Schema](https://www.elastic.co/docs/reference/ecs/)
+- [Open Cybersecurity Schema Framework](https://ocsf.io/)
+- [Splunk Common Information Model](https://help.splunk.com/en/splunk-enterprise-security-8/common-information-model/8.5/introduction/overview-of-the-splunk-common-information-model)
+- [IBM QRadar LEEF](https://www.ibm.com/docs/en/qsip/7.5?topic=leef-overview)
+- [ArcSight Common Event Format](https://docs.delinea.com/online-help/cloud-suite/siem-integrations/arcsight-cef/arcsight-cef-format.htm)
 
 ## Included ADRs
 
@@ -91,6 +112,7 @@ spec_manifest = load_document_manifest("spec")
 
 ## Resources
 
-- GitHub repository: https://github.com/groupsum/event-behavioral-telemetry-governance-pack
-- PyPI package: https://pypi.org/project/event-behavioral-telemetry-governance-pack/
-- SSOT Registry: https://pypi.org/project/ssot-registry/
+- GitHub package repository: [groupsum/event-behavioral-telemetry-governance-pack](https://github.com/groupsum/event-behavioral-telemetry-governance-pack)
+- PyPI package: [event-behavioral-telemetry-governance-pack](https://pypi.org/project/event-behavioral-telemetry-governance-pack/)
+- SSOT Registry: [ssot-registry](https://pypi.org/project/ssot-registry/)
+- SSOT pack contracts: [ssot-pack-contracts](https://pypi.org/project/ssot-pack-contracts/)
