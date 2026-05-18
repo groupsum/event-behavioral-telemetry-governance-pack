@@ -1,10 +1,13 @@
+<div align="center">
+
 # event-behavioral-telemetry-governance-pack
 
 [![PyPI version](https://img.shields.io/pypi/v/event-behavioral-telemetry-governance-pack.svg)](https://pypi.org/project/event-behavioral-telemetry-governance-pack/)
 [![Python versions](https://img.shields.io/pypi/pyversions/event-behavioral-telemetry-governance-pack.svg)](https://pypi.org/project/event-behavioral-telemetry-governance-pack/)
 [![License](https://img.shields.io/pypi/l/event-behavioral-telemetry-governance-pack.svg)](https://pypi.org/project/event-behavioral-telemetry-governance-pack/)
 [![Publish](https://github.com/groupsum/event-behavioral-telemetry-governance-pack/actions/workflows/publish.yml/badge.svg)](https://github.com/groupsum/event-behavioral-telemetry-governance-pack/actions/workflows/publish.yml)
-[![GitHub package](https://img.shields.io/badge/GitHub-package-24292f)](https://github.com/groupsum/event-behavioral-telemetry-governance-pack)
+
+</div>
 
 Installable SSOT governance pack for event envelopes, behavioral telemetry vocabularies, interaction events, and normalized event schemas.
 
