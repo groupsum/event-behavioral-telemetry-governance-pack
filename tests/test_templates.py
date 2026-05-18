@@ -16,21 +16,21 @@ from ssot_pack_event_behavioral_telemetry import (
 class GovernancePackManifestTests(unittest.TestCase):
     def test_pack_metadata_contract_is_exposed(self) -> None:
         metadata = load_pack_metadata()
-        self.assertEqual("ssot-pack-event-behavioral-telemetry", __ssot_package_name__)
-        self.assertEqual("ssot-pack-event-behavioral-telemetry", __pypi_package_name__)
+        self.assertEqual("event-behavioral-telemetry-governance-pack", __ssot_package_name__)
+        self.assertEqual("event-behavioral-telemetry-governance-pack", __pypi_package_name__)
         self.assertEqual("1.0.0", metadata["schema_version"])
-        self.assertEqual("ssot-pack-event-behavioral-telemetry", metadata["ssot_package_name"])
+        self.assertEqual("event-behavioral-telemetry-governance-pack", metadata["ssot_package_name"])
         self.assertEqual("pack:event-behavioral-telemetry", metadata["origin"]["id"])
         self.assertEqual("ssot_pack_event_behavioral_telemetry", metadata["origin"]["import_name"])
         self.assertEqual("governance-pack", metadata["origin"]["kind"])
         self.assertEqual("extension-pack", metadata["trust"]["origin"])
-        self.assertEqual("extension-pack:ssot-pack-event-behavioral-telemetry", metadata["trust"]["reservation_owner"])
+        self.assertEqual("extension-pack:event-behavioral-telemetry-governance-pack", metadata["trust"]["reservation_owner"])
         self.assertFalse(metadata["trust"]["trusted_by_default"])
         self.assertEqual("1.0.0", load_pack_schema_version())
 
     def test_pack_manifest_contract_is_exposed(self) -> None:
         manifest = load_pack_manifest()
-        self.assertEqual("ssot-pack-event-behavioral-telemetry", manifest["metadata"]["origin"]["package_name"])
+        self.assertEqual("event-behavioral-telemetry-governance-pack", manifest["metadata"]["origin"]["package_name"])
         self.assertEqual(8, len(manifest["documents"]["adr"]))
         self.assertEqual(18, len(manifest["documents"]["spec"]))
 

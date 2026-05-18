@@ -1,4 +1,4 @@
-# ssot-pack-event-behavioral-telemetry
+# event-behavioral-telemetry-governance-pack
 
 Installable SSOT governance pack for event envelopes, behavioral telemetry vocabularies, interaction events, and normalized event schemas.
 
@@ -8,10 +8,10 @@ This repository is an installable SSOT Registry governance pack. It packages imm
 
 - Pack ID: `pack:event-behavioral-telemetry`
 - Priority: `P0.4`
-- PyPI package: `ssot-pack-event-behavioral-telemetry`
+- PyPI package: `event-behavioral-telemetry-governance-pack`
 - Import package: `ssot_pack_event_behavioral_telemetry`
 - GitHub repository: `groupsum/event-behavioral-telemetry-governance-pack`
-- Reservation owner: `extension-pack:ssot-pack-event-behavioral-telemetry`
+- Reservation owner: `extension-pack:event-behavioral-telemetry-governance-pack`
 
 ## Domain Focus
 
@@ -67,15 +67,15 @@ Event Tracking And Behavioral Telemetry
 ## Install With uv
 
 ```bash
-uv add ssot-pack-event-behavioral-telemetry
-uv add ssot-registry ssot-pack-event-behavioral-telemetry
+uv add event-behavioral-telemetry-governance-pack
+uv add ssot-registry event-behavioral-telemetry-governance-pack
 ```
 
 ## Use With The SSOT Registry CLI
 
 ```bash
-uvx --from ssot-registry ssot pack install ssot-pack-event-behavioral-telemetry
-uvx --from ssot-registry ssot pack sync . ssot-pack-event-behavioral-telemetry
+uvx --from ssot-registry ssot pack install event-behavioral-telemetry-governance-pack
+uvx --from ssot-registry ssot pack sync . event-behavioral-telemetry-governance-pack
 uv run ssot adr list .
 uv run ssot spec list .
 ```
@@ -92,5 +92,5 @@ spec_manifest = load_document_manifest("spec")
 ## Resources
 
 - GitHub repository: https://github.com/groupsum/event-behavioral-telemetry-governance-pack
-- PyPI package: https://pypi.org/project/ssot-pack-event-behavioral-telemetry/
+- PyPI package: https://pypi.org/project/event-behavioral-telemetry-governance-pack/
 - SSOT Registry: https://pypi.org/project/ssot-registry/

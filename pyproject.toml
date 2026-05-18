@@ -3,7 +3,7 @@ requires = ["setuptools>=69", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "ssot-pack-event-behavioral-telemetry"
+name = "event-behavioral-telemetry-governance-pack"
 version = "0.1.0"
 description = "Installable SSOT governance pack for event envelopes, behavioral telemetry vocabularies, interaction events, and normalized event schemas."
 readme = "README.md"
@@ -44,9 +44,9 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/groupsum/ssot-pack-event-behavioral-telemetry"
-Repository = "https://github.com/groupsum/ssot-pack-event-behavioral-telemetry"
-Issues = "https://github.com/groupsum/ssot-pack-event-behavioral-telemetry/issues"
+Homepage = "https://github.com/groupsum/event-behavioral-telemetry-governance-pack"
+Repository = "https://github.com/groupsum/event-behavioral-telemetry-governance-pack"
+Issues = "https://github.com/groupsum/event-behavioral-telemetry-governance-pack/issues"
 
 [tool.setuptools]
 package-dir = {"" = "src"}

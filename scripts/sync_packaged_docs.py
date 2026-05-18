@@ -13,7 +13,7 @@ except ModuleNotFoundError:  # pragma: no cover
 ROOT = Path(__file__).resolve().parents[1]
 ADR_TEMPLATES = ROOT / "src" / "ssot_pack_event_behavioral_telemetry" / "templates" / "adr"
 SPEC_TEMPLATES = ROOT / "src" / "ssot_pack_event_behavioral_telemetry" / "templates" / "specs"
-RESERVATION_OWNER = "extension-pack:ssot-pack-event-behavioral-telemetry"
+RESERVATION_OWNER = "extension-pack:event-behavioral-telemetry-governance-pack"
 MINIMUM_SCHEMA_VERSION = "0.4.0"
 
 

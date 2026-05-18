@@ -1,9 +1,9 @@
 {
   "schema_version": "1.0.0",
-  "ssot_package_name": "ssot-pack-event-behavioral-telemetry",
+  "ssot_package_name": "event-behavioral-telemetry-governance-pack",
   "origin": {
     "id": "pack:event-behavioral-telemetry",
-    "package_name": "ssot-pack-event-behavioral-telemetry",
+    "package_name": "event-behavioral-telemetry-governance-pack",
     "import_name": "ssot_pack_event_behavioral_telemetry",
     "kind": "governance-pack",
     "title": "Event Tracking And Behavioral Telemetry",
@@ -19,7 +19,7 @@
   "trust": {
     "trusted_by_default": false,
     "origin": "extension-pack",
-    "reservation_owner": "extension-pack:ssot-pack-event-behavioral-telemetry"
+    "reservation_owner": "extension-pack:event-behavioral-telemetry-governance-pack"
   },
   "documents": {
     "adr": {
