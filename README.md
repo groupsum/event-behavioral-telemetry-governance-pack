@@ -118,3 +118,7 @@ spec_manifest = load_document_manifest("spec")
 - PyPI package: [event-behavioral-telemetry-governance-pack](https://pypi.org/project/event-behavioral-telemetry-governance-pack/)
 - SSOT Registry: [ssot-registry](https://pypi.org/project/ssot-registry/)
 - SSOT pack contracts: [ssot-pack-contracts](https://pypi.org/project/ssot-pack-contracts/)
+
+## Normative ownership boundary
+
+Declared canonical CloudEvents ownership relative to catalog lineage.

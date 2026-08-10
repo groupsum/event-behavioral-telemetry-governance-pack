@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.0.dev1
+
+- Declared canonical CloudEvents ownership relative to catalog lineage.
+
 ## 0.1.1.dev1
 
 - Pending release notes.

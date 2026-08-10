@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0.0",
+  "kind": "adr",
+  "id": "adr:cloudevents-envelope-and-binding-are-owned-here",
+  "number": 1009,
+  "slug": "cloudevents-envelope-and-binding-are-owned-here",
+  "title": "Cloudevents Envelope And Binding Are Owned Here",
+  "status": "accepted",
+  "origin": "extension-pack",
+  "summary": "CloudEvents envelope and transport bindings have one canonical owner.",
+  "body": "Event telemetry governance owns CloudEvents attributes, JSON format, HTTP binding, event identity, and transport semantics. Catalog governance consumes envelope identity for lineage.",
+  "decision_date": "2026-08-10",
+  "references": [
+    "https://cloudevents.io/"
+  ],
+  "supersedes": [],
+  "superseded_by": [],
+  "status_notes": [],
+  "tags": [
+    "cloudevents",
+    "envelope",
+    "and",
+    "binding",
+    "are",
+    "owned",
+    "here"
+  ]
+}
