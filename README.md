@@ -150,13 +150,15 @@ The script prints `pack:event-behavioral-telemetry` from the installed pack meta
 Source: [examples/usage.py](https://github.com/groupsum/event-behavioral-telemetry-governance-pack/blob/master/examples/usage.py).
 
 ```python
-"""Resolve and read a packaged specification without synchronizing it."""
+"""Find a specification and its downstream path in the installed manifest."""
 
-from ssot_pack_event_behavioral_telemetry import load_document_manifest, read_packaged_document_text
+from ssot_pack_event_behavioral_telemetry import load_document_manifest
 
-spec = next(row for row in load_document_manifest("spec") if row["id"] == "spc:cloudevents-core-envelope-requirements")
-document = read_packaged_document_text("spec", spec["filename"])
-assert spec["id"] in document
+specification = next(
+    row for row in load_document_manifest("spec")
+    if row["id"] == "spc:cloudevents-core-envelope-requirements"
+)
+assert specification["target_path"] == ".ssot/specs/SPEC-2001-cloudevents-core-envelope-requirements.yaml"
 ```
 <!-- readme-standards:end example.usage -->
 
