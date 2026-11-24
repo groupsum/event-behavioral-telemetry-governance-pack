@@ -150,7 +150,7 @@
     "title": "Cloudevents Envelope And Binding Are Owned Here",
     "filename": "ADR-1009-cloudevents-envelope-and-binding-are-owned-here.yaml",
     "target_path": ".ssot/adr/ADR-1009-cloudevents-envelope-and-binding-are-owned-here.yaml",
-    "sha256": "406c5257923f616943440c9c447e5bfdfeb6e89b843c0ee861550dad40974120",
+    "sha256": "d47df0be62621465a501e73e6b95d9d0bb148946fdb0c5bf43383d9d8ddcf74b",
     "origin": "extension-pack",
     "reservation_owner": "extension-pack:event-behavioral-telemetry-governance-pack",
     "immutable": true,
